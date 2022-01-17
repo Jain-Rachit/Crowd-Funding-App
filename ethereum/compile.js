@@ -12,6 +12,7 @@ const campaignPath = path.resolve(__dirname,'contracts','Campaign.sol');
 
 // taking the source from the file
 const source = fs.readFileSync(campaignPath,'utf8');
+
 // console.log(source);
 //compiling Campaign.sol
 const output = solc.compile(source).contracts;
